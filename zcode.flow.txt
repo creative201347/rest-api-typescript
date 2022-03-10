@@ -1,0 +1,20 @@
+# Bootstrap application
+    1. Setup express JS
+    2. Create routes function
+    3. Setup database connection
+    4. Setup logger
+    5. Validate request middleware
+# Registration
+    1. Create user model
+    2. Create user endpoint
+    3. Create user session
+    4. Deserialize user middleware (refresh tokens)
+    5. Get sessions
+    6. Delete session
+    7. Require user middleware
+# Product resource
+    1. Create product model
+    2. Create product
+    3. Read product
+    4. Update product
+    7. Delete product
