@@ -1,0 +1,20 @@
+# setting value 
+    var jsonData = JSON.parse(responseBody);
+    console.log(jsonData)
+    postman.setEnvironmentVariable("accessToken", jsonData.accessToken);
+    postman.setEnvironmentVariable("refreshToken", jsonData.refreshToken);
+
+# enviroment body 
+    {
+        "email": "{{email}}",
+        "password": "{{password}}",
+        "passwordConfirmation": "{{password}}",
+        "name": "{{name}}"
+    }
+
+# deleting 
+    const newAccessToken = responseHeaders['x-access-token']
+    if(newAccessToken){
+        console.log('Set new access token')
+        postman.setEnvironmentVariable("accessToken", newAccessToken);
+    }
